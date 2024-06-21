@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "whisperx"
+version = "0.1.0"
+description = "A fork of Max Bain's WhisperX repo which uses poetry for environment management. The rationale here is that the base project doesn't seem to work when installing into other repos with poetry. This project fixes that"
+authors = ["Connor Keevill <connor.keevill.19@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">3.10"
+torch = "^2.3.1"
+torchaudio = "^2.3.1"
+faster-whisper = "^1.0.2"
+transformers = "^4.41.2"
+pandas = "^2.2.2"
+nltk = "^3.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
